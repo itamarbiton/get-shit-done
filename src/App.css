@@ -1,38 +1,109 @@
-.App {
+.navigation-component {
+  height: 70px;
+  background-color: rgb(223, 128, 61);
+}
+
+.navigation-component button{
+  color: white;
+  margin: 30px;
+  float: right;
+  border: 0px;
+  background-color: transparent;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#logo {
+  color: white;
+  margin: 35px;
+  float: left;
+}
+#radio-box {
+  height: 25px;
+  width: 25px;
+  position: relative;
+  bottom: 20px;
+  float: left;
+}
+
+.radio-input {
+	border-radius: 25px;
+  position: absolute;
+  left: 0;
+  top: 10px;
+  height: 25px;
+  width: 25px;
+}
+.demo-date {
+  color: rgb(100, 100, 100, 0.4);
+  position: relative;
+  bottom: 50px;
+  float: right;
+}
+
+.demo-task {
+  position: relative;
+  left: 40px;
+  bottom: 2px;
+}
+
+.completed-todos-component {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#completed-component {
+  border-radius: 0.50rem;
+  height: 60px;
+  width: 540px;
+  margin-left: 530px;
+  background-color: rgb(100, 100, 100, 0.1);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.task-component {
+  border-radius: 0.50rem;
+  text-align: left;
+  position: relative;
+  display: inline-block;
+  height: 60px;
+  left: 200px;
+  width: 520px;
+  background-color: rgb(100, 100, 100, 0.1);
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.new-task-component input {
+  padding: 15px;
+  width: 480px;
+  background-color: rgb(100, 100, 100, 0.2);
+  margin-top: 50px;
+  font-size: 15px;
+  border: 0;
+  border-radius: 0.50rem;
 }
 
-.App-link {
-  color: #61dafb;
+#add-task {
+  background-color: rgb(100, 100, 100, 0.2);
+  border: 0;
+  font-size: 20px;
+  border-radius: 0.50rem;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.new-task-component {
+  text-align: center;
+}
+
+
+.todos-component {
+  position: relative;
+  right: 190px;
+  text-align: center;
+  height: 300px;
+}
+
+.completed-todos-component {
+  position: relative;
+  right: 150px;
+  text-align: center;
+  height: 300px;
 }
