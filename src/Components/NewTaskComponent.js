@@ -3,8 +3,10 @@ import TodosComponent from './TodosComponent';
 
 export default class NewTaskComponent extends Component {
 
-    onPlusButtonClick = () => {
+    onPlusButtonClick = () => {                                           //takes the task value
         let textVal = document.getElementById('task-input').value;
+        document.getElementById('task-input').value = '';
+        this.props.onTodos(textVal);
     }
 
     render() {

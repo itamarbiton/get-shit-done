@@ -6,7 +6,7 @@ export default class TodosComponent extends Component {
         return (
             <div className='todos-component'>
                 <h1>Todos</h1>
-            <TaskComponent />
+            <TaskComponent task={this.props.addList}/> 
             </div>
         )
     }
